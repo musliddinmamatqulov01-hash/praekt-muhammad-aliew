@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMW 3 Series</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    @layer utilities {
+      @keyframes float {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        25% { transform: translateY(-5px) rotate(-5deg); }
+        50% { transform: translateY(5px) rotate(5deg); }
+        75% { transform: translateY(-3px) rotate(-5deg); }
+      }
+      .animate-float-slow {
+        animation: float 6s infinite alternate;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <header class="bg-black text-white py-16 flex flex-col items-center">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.pGacAyPqaAKkvNIJm_5fsAHaE7?rs=1&pid=ImgDetMain&o=7&rm=3" alt="BMW 3 Series Logo" class="w-200 h-100 mb-4">
+    <h1 class="text-4xl font-bold mb-2">BMW 3 Series</h1>
+    <p class="text-center max-w-xl text-gray-300">Experience the ultimate driving machine with style, performance, and comfort.</p>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-8 py-20 space-y-28">
+
+    <section class="flex flex-col md:flex-row items-center gap-12">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.diPfnv--jmazkBlhwYWlZwHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" 
+           class="w-full md:w-1/2 rounded-lg shadow-lg animate-float-slow" 
+           alt="BMW 3 Series Engine">
+
+      <div class="md:w-1/2 space-y-4">
+        <h2 class="text-3xl font-bold">Engine</h2>
+        <p>Turbocharged petrol/diesel engines. 255–382 HP. Start/stop system and efficiency boost.</p>
+        <a href="#" class="inline-block bg-blue-600 text-white px-6 py-2 rounded transition-transform transform hover:scale-105 hover:bg-blue-700">
+          Learn More
+        </a>
+      </div>
+    </section>
+
+    <section class="flex flex-col md:flex-row-reverse items-center gap-12">
+      <img src="https://th.bing.com/th/id/R.6764f0d6f84055ed8bf9a75036e74547?rik=Fxoeg8Y%2fPxQYng&pid=ImgRaw&r=0" 
+           class="w-full md:w-1/2 rounded-lg shadow-lg animate-float-slow" 
+           alt="BMW 3 Series Transmission">
+
+      <div class="md:w-1/2 space-y-4">
+        <h2 class="text-3xl font-bold">Transmission</h2>
+        <p>8-speed automatic with rear-wheel or xDrive AWD. Smooth gear shifting for comfort and sport modes.</p>
+        <a href="#" class="inline-block bg-blue-600 text-white px-6 py-2 rounded transition-transform transform hover:scale-105 hover:bg-blue-700">
+          Learn More
+        </a>
+      </div>
+    </section>
+
+    <section class="flex flex-col md:flex-row items-center gap-12">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.u79GcYoBsHPSzNVShQw3YQHaHW?rs=1&pid=ImgDetMain&o=7&rm=3" 
+           class="w-full md:w-1/2 rounded-lg shadow-lg animate-float-slow" 
+           alt="BMW 3 Series Suspension">
+
+      <div class="md:w-1/2 space-y-4">
+        <h2 class="text-3xl font-bold">Suspension</h2>
+        <p>Adaptive suspension, comfort and sport modes. Provides precise handling and smooth ride.</p>
+        <a href="#" class="inline-block bg-blue-600 text-white px-6 py-2 rounded transition-transform transform hover:scale-105 hover:bg-blue-700">
+          Learn More
+        </a>
+      </div>
+    </section>
+
+    <section class="grid md:grid-cols-3 gap-12">
+      <div class="space-y-4">
+        <img src="https://cdn.bimmertoday.de/wp-content/uploads/2021/03/2021-BMW-M3-G80-Interieur-Carbon-01.jpg" class="rounded-lg shadow-lg" alt="BMW 3 w-40 Series Interior">
+        <h3 class="text-2xl font-bold">Interior</h3>
+        <p>Leather seats, digital cockpit, ambient lighting, 5–7 seat layout.</p>
+      </div>
+      <div class="space-y-4">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.sxaJB6dHlShJqolFyxqx2wHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" class="rounded-lg shadow-lg" alt="BMW 3 Series Safety">
+        <h3 class="text-2xl font-bold">Safety Systems</h3>
+        <p>Airbags, lane assist, collision warning, blind spot monitoring, parking sensors.</p>
+      </div>
+      <div class="space-y-4">
+        <img src="https://lh3.googleusercontent.com/-Fpe9RHpt6gk/ULEANsIEfCI/AAAAAAAALdk/D4NLlfA2Wy0/s711/20121124_082318.jpg" class="rounded-lg shadow-lg h-50 w-50" alt="BMW 3 Series Wheels">
+        <h3 class="text-2xl font-bold">Wheels & Tires</h3>
+        <p>18–20 inch wheels, run-flat tires, optional sport/off-road packages.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-black text-gray-300 py-16">
+    <div class="max-w-7xl mx-auto px-8">
+
+
+      <div class="flex flex-wrap gap-8 mb-12">
+        <p class="text-sm flex-1 min-w-[150px]">About BMW 3 Series</p>
+        <p class="text-sm flex-1 min-w-[150px]">Performance</p>
+        <p class="text-sm flex-1 min-w-[150px]">Engine</p>
+        <p class="text-sm flex-1 min-w-[150px]">Transmission</p>
+        <p class="text-sm flex-1 min-w-[150px]">Suspension</p>
+        <p class="text-sm flex-1 min-w-[150px]">Interior</p>
+        <p class="text-sm flex-1 min-w-[150px]">Exterior</p>
+        <p class="text-sm flex-1 min-w-[150px]">Safety</p>
+        <p class="text-sm flex-1 min-w-[150px]">Technology</p>
+        <p class="text-sm flex-1 min-w-[150px]">Infotainment</p>
+        <p class="text-sm flex-1 min-w-[150px]">Fuel System</p>
+        <p class="text-sm flex-1 min-w-[150px]">Exhaust</p>
+        <p class="text-sm flex-1 min-w-[150px]">Wheels</p>
+        <p class="text-sm flex-1 min-w-[150px]">Cooling</p>
+        <p class="text-sm flex-1 min-w-[150px]">Electrical</p>
+        <p class="text-sm flex-1 min-w-[150px]">Drive Modes</p>
+        <p class="text-sm flex-1 min-w-[150px]">Warranty</p>
+        <p class="text-sm flex-1 min-w-[150px]">Service</p>
+        <p class="text-sm flex-1 min-w-[150px]">Financing</p>
+        <p class="text-sm flex-1 min-w-[150px]">Contact</p>
+      </div>
+
+      <div class="flex items-center gap-4 justify-center">
+
+        <a href="#" class="w-13 h-13 flex items-center justify-center rounded-full bg-gray-800 hover:bg-pink-600">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="w-7 h-7" alt="Instagram">
+        </a>
+        <a href="#" class="w-13 h-13 flex items-center justify-center rounded-full bg-gray-800 hover:bg-blue-600">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" class="w-7 h-7" alt="Facebook">
+        </a>
+        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-sky-500">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" class="w-7 h-7" alt="Twitter">
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

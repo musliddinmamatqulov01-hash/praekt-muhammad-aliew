@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMW i4</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    @layer utilities {
+      @keyframes float {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        25% { transform: translateY(-6px) rotate(-1deg); }
+        50% { transform: translateY(6px) rotate(1deg); }
+        75% { transform: translateY(-3px) rotate(-0.5deg); }
+      }
+      .animate-float-slow {
+        animation: float 5s infinite alternate;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <header class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 flex flex-col items-center">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.wjbxICl7Ao84uXyDQYPAOQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="BMW i4 Logo" class="w-500 h-40 mb-4">
+    <h1 class="text-5xl font-extrabold mb-4">BMW i4</h1>
+    <p class="text-center max-w-2xl text-gray-200">Electric innovation meets performance. The BMW i4 redefines driving dynamics.</p>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-8 py-24 space-y-32">
+
+    <section class="flex flex-col md:flex-row items-center gap-12">
+      <img src="https://th.bing.com/th/id/R.3955cc71ee18b4eb6decb61329ec450b?rik=XFZEpBBtXGsI9A&pid=ImgRaw&r=0" 
+           class="w-full md:w-1/2 rounded-lg shadow-lg animate-float-slow" 
+           alt="BMW i4 Electric Motor">
+      <div class="md:w-1/2 space-y-4">
+        <h2 class="text-3xl font-bold">Electric Motor</h2>
+        <p>Single or dual electric motors producing 340–536 HP with instant torque for smooth and powerful acceleration.</p>
+        <a href="#" class="inline-block bg-green-600 text-white px-6 py-2 rounded transition-transform transform hover:scale-105 hover:bg-green-700">
+          Discover More
+        </a>
+      </div>
+    </section>
+
+    <section class="flex flex-col md:flex-row-reverse items-center gap-12">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.LxYYZDVWAFnSEP9Y8g2PkAHaD5?rs=1&pid=ImgDetMain&o=7&rm=3" 
+           class="w-full md:w-1/2 rounded-lg shadow-lg animate-float-slow" 
+           alt="BMW i4 Battery">
+      <div class="md:w-1/2 space-y-4">
+        <h2 class="text-3xl font-bold">Battery & Charging</h2>
+        <p>High-capacity lithium-ion battery with fast charging capability. Up to 590 km range (WLTP).</p>
+        <a href="#" class="inline-block bg-green-600 text-white px-6 py-2 rounded transition-transform transform hover:scale-105 hover:bg-green-700">
+          Discover More
+        </a>
+      </div>
+    </section>
+
+    <section class="flex flex-col md:flex-row items-center gap-12">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.Q5joNhxz8N9P1H5MNUfO9gHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" 
+           class="w-full md:w-1/2 rounded-lg shadow-lg animate-float-slow" 
+           alt="BMW i4 Technology">
+      <div class="md:w-1/2 space-y-4">
+        <h2 class="text-3xl font-bold">Technology & Driver Assist</h2>
+        <p>Advanced iDrive 8 system, digital cockpit, intelligent driver assistance including lane keep, adaptive cruise, and parking support.</p>
+        <a href="#" class="inline-block bg-green-600 text-white px-6 py-2 rounded transition-transform transform hover:scale-105 hover:bg-green-700">
+          Discover More
+        </a>
+      </div>
+    </section>
+
+    <section class="grid md:grid-cols-3 gap-12">
+      <div class="space-y-4">
+        <img src="https://tse1.explicit.bing.net/th/id/OIP.j8THI1oeuXaHmg8bvd7ziwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" class="rounded-lg shadow-lg" alt="BMW i4 Interior">
+        <h3 class="text-2xl font-bold">Interior Comfort</h3>
+        <p>Premium cabin with sustainable materials, ambient lighting, and ergonomic seats for ultimate comfort.</p>
+      </div>
+      <div class="space-y-4">
+        <img src="https://images.caradisiac.com/images/1/4/3/0/201430/S1-essai-bmw-i4-edrive35-2023-que-vaut-la-version-d-entree-de-gamme-750111.jpg" class="rounded-lg h-30 shadow-lg" alt="BMW i4 Multimedia">
+        <h3 class="text-2xl font-bold">Connectivity & Multimedia</h3>
+        <p>Seamless Apple CarPlay, Android Auto, wireless charging, and voice control for smart driving experience.</p>
+      </div>
+      <div class="space-y-4">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.nYYZaf1izEmoaTp-2_egNwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" class="rounded-lg shadow-lg h-60" alt="BMW i4 Wheels">
+        <h3 class="text-2xl font-bold">Wheels & Exterior</h3>
+        <p>Aerodynamic design, LED headlights, panoramic sunroof, and 18–20 inch wheel options with sporty stance.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-gray-900 text-gray-300 py-16">
+    <div class="max-w-7xl mx-auto px-8">
+
+      <div class="flex flex-wrap gap-6 mb-12">
+        <p class="text-sm flex-1 min-w-[140px]">About BMW i4</p>
+        <p class="text-sm flex-1 min-w-[140px]">Performance</p>
+        <p class="text-sm flex-1 min-w-[140px]">Electric Motor</p>
+        <p class="text-sm flex-1 min-w-[140px]">Battery</p>
+        <p class="text-sm flex-1 min-w-[140px]">Charging</p>
+        <p class="text-sm flex-1 min-w-[140px]">Suspension</p>
+        <p class="text-sm flex-1 min-w-[140px]">Interior</p>
+        <p class="text-sm flex-1 min-w-[140px]">Comfort</p>
+        <p class="text-sm flex-1 min-w-[140px]">Technology</p>
+        <p class="text-sm flex-1 min-w-[140px]">Safety</p>
+        <p class="text-sm flex-1 min-w-[140px]">Multimedia</p>
+        <p class="text-sm flex-1 min-w-[140px]">Connectivity</p>
+        <p class="text-sm flex-1 min-w-[140px]">Infotainment</p>
+        <p class="text-sm flex-1 min-w-[140px]">Exterior</p>
+        <p class="text-sm flex-1 min-w-[140px]">Wheels</p>
+        <p class="text-sm flex-1 min-w-[140px]">Lighting</p>
+        <p class="text-sm flex-1 min-w-[140px]">Warranty</p>
+        <p class="text-sm flex-1 min-w-[140px]">Service</p>
+        <p class="text-sm flex-1 min-w-[140px]">Financing</p>
+        <p class="text-sm flex-1 min-w-[140px]">Contact</p>
+      </div>
+
+      <div class="flex items-center gap-4 justify-center">
+        <img src="https://mediapool.bmwgroup.com/cache/P9/202404/P90546642/P90546642-the-new-bmw-i4-m50-xdrive-exterior-1000px.jpg" class="w-10 h-10" alt="BMW Logo">
+        <img src="https://mediapool.bmwgroup.com/cache/P9/202404/P90546642/P90546642-the-new-bmw-i4-m50-xdrive-exterior-1000px.jpg" class="w-10 h-10" alt="Website 1">
+        <img src="https://www.megautos.com/wp-content/uploads/2022/10/nuevo-bmw-m2-2023-llantas-1024x669.jpg" class="w-10 h-10" alt="Website 2">
+
+        <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800 hover:bg-pink-600">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="w-4 h-4" alt="Instagram">
+        </a>
+        <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800 hover:bg-blue-600">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" class="w-4 h-4" alt="Facebook">
+        </a>
+        <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800 hover:bg-sky-500">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" class="w-4 h-4" alt="Twitter">
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
