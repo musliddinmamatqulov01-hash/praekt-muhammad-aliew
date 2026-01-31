@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+ <html lang="tg">
+     <head> <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+      <title>BMW M3: Ultimate Driving Machine</title> 
+      <script src="https://cdn.tailwindcss.com">
+
+      </script> <style> /* Custom Keyframes and Animations */ @keyframes fadeInSlideUp { 0% { opacity: 0; transform: translateY(50px); } 100% { opacity: 1; transform: translateY(0); } } @keyframes zoomIn { 0% { transform: scale(1); } 100% { transform: scale(1.05); } } @keyframes pulseGlow { 0%, 100% { box-shadow: 0 0 15px rgba(0, 119, 255, 0.7); } 50% { box-shadow: 0 0 30px rgba(0, 119, 255, 1); } }
+
+    .animate-fadeInSlideUp {
+        animation: fadeInSlideUp 1s ease-out forwards;
+    }
+    .hover-zoom-img {
+        transition: transform 0.6s ease-in-out;
+    }
+    .hover-zoom-img:hover {
+        transform: scale(1.05);
+    }
+    .hover-3d-rotate {
+        transition: transform 0.5s ease;
+    }
+    .hover-3d-rotate:hover {
+        transform: rotateY(10deg) scale(1.02);
+    }
+    .animate-pulseGlow {
+        animation: pulseGlow 2s infinite alternate;
+    }
+</style>
+</head> <body class="bg-gray-950 text-gray-100 font-sans">
+
+<header class="relative h-screen flex flex-col items-center justify-center overflow-hidden">
+    <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover opacity-30">
+        <source src="https://assets.bmw.com/video/BMW_M3_Competition_Drive.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="relative z-10 text-center px-6 animate-fadeInSlideUp">
+        <p class="text-lg md:text-xl text-blue-400 mb-4 tracking-widest uppercase">The Legend Returns</p>
+        <h1 class="text-6xl md:text-8xl font-extrabold mb-6 text-white leading-tight">BMW <span class="text-blue-500">M3</span> Competition</h1>
+        <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">Experience unmatched performance, precision, and passion on every drive.</p>
+        <button class="mt-10 px-8 py-3 bg-blue-600 text-white text-lg font-semibold rounded-full hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+            Test Drive Now
+        </button>
+    </div>
+</header>
+
+<section class="py-24 bg-gray-900 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="relative group overflow-hidden rounded-xl shadow-2xl">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.a1czQw4ts9yp2_deCBrB9QHaEo?rs=1&pid=ImgDetMain&o=7&rm=3" 
+                 alt="BMW M3 Exterior Design" 
+                 class="w-full h-auto object-cover rounded-xl hover-zoom-img">
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+            </div>
+        </div>
+        <div>
+            <span class="text-blue-500 text-sm font-bold uppercase mb-3 block">Design & Aerodynamics</span>
+            <h2 class="text-5xl font-bold mb-6 leading-tight">Aggressive Stance, Unmistakable Presence.</h2>
+            <p class="text-gray-300 text-lg mb-8">
+                The new BMW M3 Competition commands attention with its powerful proportions and distinctive design elements. From the aggressive front grille to the sculpted rear diffuser, every detail is engineered for performance and visual impact.
+            </p>
+            <ul class="space-y-3 text-gray-400">
+                <li class="flex items-center"><svg class="w-5 h-5 mr-3 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Iconic M Grille with horizontal slats</li>
+                <li class="flex items-center"><svg class="w-5 h-5 mr-3 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> M specific side gills and aerodynamic mirrors</li>
+                <li class="flex items-center"><svg class="w-5 h-5 mr-3 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> Integrated rear spoiler and quad exhaust pipes</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 bg-gray-950 px-6">
+    <div class="max-w-7xl mx-auto text-center mb-16">
+        <span class="text-blue-500 text-sm font-bold uppercase mb-3 block">Interior & Comfort</span>
+        <h2 class="text-5xl font-bold leading-tight">Driver-Focused Cockpit. Unrivaled Luxury.</h2>
+    </div>
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="relative group overflow-hidden rounded-xl shadow-lg border border-gray-800 hover-3d-rotate">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.b1QFDbuuCJQo0bIzaL0zWQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" 
+                 alt="M Sport Seats" 
+                 class="w-full h-64 object-cover">
+            <div class="p-6 bg-gray-800">
+                <h4 class="text-2xl font-semibold text-white mb-2">M Sport Seats</h4>
+                <p class="text-gray-400">Ergonomic design for maximum support during dynamic driving.</p>
+            </div>
+        </div>
+        <div class="relative group overflow-hidden rounded-xl shadow-lg border border-gray-800 hover-3d-rotate">
+            <img src="https://buysteeringwheel.com/wp-content/uploads/2024/10/bmw-cortical-leather-1.jpg" 
+                 alt="M Leather Steering Wheel" 
+                 class="w-full h-64 object-cover">
+            <div class="p-6 bg-gray-800">
+                <h4 class="text-2xl font-semibold text-white mb-2">M Leather Steering Wheel</h4>
+                <p class="text-gray-400">Perfect grip and direct feedback for precision control.</p>
+            </div>
+        </div>
+        <div class="relative group overflow-hidden rounded-xl shadow-lg border border-gray-800 hover-3d-rotate">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.Gq04hwMFTtbEA-77XI1gWwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" 
+                 alt="BMW Curved Display" 
+                 class="w-full h-64 object-cover">
+            <div class="p-6 bg-gray-800">
+                <h4 class="text-2xl font-semibold text-white mb-2">BMW Curved Display</h4>
+                <p class="text-gray-400">Intuitive interface with M-specific graphics and data.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 bg-gray-900 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+        <div class="lg:w-1/2">
+            <span class="text-blue-500 text-sm font-bold uppercase mb-3 block">Performance & Engine</span>
+            <h2 class="text-5xl font-bold mb-6 leading-tight">Power That Thrills.</h2>
+            <p class="text-gray-300 text-lg mb-8">
+                At the heart of the BMW M3 Competition lies the formidable M TwinPower Turbo inline 6-cylinder engine. Delivering exhilarating power and instant response, it's engineered for pure driving excitement.
+            </p>
+            <ul class="space-y-4 text-gray-400">
+                <li class="flex items-center text-lg"><span class="text-blue-400 font-bold text-2xl mr-3">510</span> hp</li>
+                <li class="flex items-center text-lg"><span class="text-blue-400 font-bold text-2xl mr-3">3.9</span> sec (0-100 km/h)</li>
+                <li class="flex items-center text-lg"><span class="text-blue-400 font-bold text-2xl mr-3">8</span>-speed M Steptronic transmission</li>
+            </ul>
+        </div>
+        <div class="lg:w-1/2 relative group overflow-hidden rounded-xl shadow-2xl animate-pulseGlow">
+            <img src="https://www.bmw.com/content/dam/bmw/common/all-models/m-series/m3-sedan/2020/highlights/bmw-m3-sedan-competition-highlights-engine-desktop.jpg" 
+                 alt="BMW M3 Engine" 
+                 class="w-full h-auto object-cover rounded-xl hover-zoom-img">
+            <div class="absolute inset-0 bg-blue-500/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <p class="absolute bottom-6 left-6 text-2xl font-bold text-white z-10">M TwinPower Turbo</p>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 bg-gray-950 px-6 text-center">
+    <div class="max-w-4xl mx-auto">
+        <span class="text-blue-500 text-sm font-bold uppercase mb-3 block">Gallery & Media</span>
+        <h2 class="text-5xl font-bold mb-12 leading-tight">Unleash the Beast.</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="relative group overflow-hidden rounded-xl shadow-xl">
+                <img src="https://www.bmw.com/content/dam/bmw/global/all-models/m-series/m3-sedan/2020/highlights/bmw-m3-sedan-competition-gallery-01-1920px.jpg" 
+                     alt="BMW M3 Action Shot 1" 
+                     class="w-full h-auto object-cover rounded-xl hover-zoom-img">
+                <div class="absolute inset-0 bg-gray-950/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <p class="text-white text-xl font-bold">Track Ready</p>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden rounded-xl shadow-xl">
+                <img src="https://www.bmw.com/content/dam/bmw/global/all-models/m-series/m3-sedan/2020/highlights/bmw-m3-sedan-competition-gallery-02-1920px.jpg" 
+                     alt="BMW M3 Action Shot 2" 
+                     class="w-full h-auto object-cover rounded-xl hover-zoom-img">
+                <div class="absolute inset-0 bg-gray-950/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <p class="text-white text-xl font-bold">Precision Driving</p>
+                </div>
+            </div>
+        </div>
+        <button class="mt-12 px-10 py-4 bg-transparent border-2 border-blue-600 text-blue-400 text-xl font-semibold rounded-full hover:bg-blue-600 hover:text-white transition-all duration-300">
+            View Full Gallery
+        </button>
+    </div>
+</section>
+
+<footer class="py-12 bg-gray-900 text-gray-400 text-center">
+    <p>&copy; 2026 BMW M3. All rights reserved.</p>
+</footer>

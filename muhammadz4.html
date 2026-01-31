@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMW Z4</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    @layer utilities {
+      @keyframes float {
+        0%,100% {transform: translateY(0);}
+        25% {transform: translateY(-15px);}
+        50% {transform: translateY(15px);}
+        75% {transform: translateY(-10px);}
+      }
+      .animate-float {animation: float 5s infinite alternate;}
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <header class="bg-gradient-to-r from-gray-800 to-gray-700 text-white py-16 text-center">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.2zxM6WVyym8cNsW-23o5MAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="BMW Z4 Logo" class="mx-auto mb-4 w-80 h-50">
+    <h1 class="text-5xl font-bold mb-2">BMW Z4</h1>
+    <p class="max-w-xl mx-auto">Sporty roadster with turbocharged engines, responsive handling, and convertible design.</p>
+  </header>
+
+
+  <main class="max-w-7xl mx-auto px-8 py-16 space-y-12">
+
+    <section class="flex flex-col md:flex-row items-center gap-8 hover:bg-gray-100 p-6 rounded-lg transition-transform transform hover:scale-105 shadow hover:shadow-lg">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.QhBxPrVFVu7Rl-31Jio79wHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" class=" h-40 w-80 rounded-lg shadow-lg animate-float" alt="Engine">
+      <div class="md:w-1/2 space-y-2">
+        <h2 class="text-2xl font-bold">Engine</h2>
+        <p>Turbocharged 4-cylinder or 6-cylinder engine producing 255–382 HP for thrilling acceleration.</p>
+      </div>
+    </section>
+
+    <section class="flex flex-col md:flex-row-reverse items-center gap-8 hover:bg-gray-100 p-6 rounded-lg transition-transform transform hover:scale-105 shadow hover:shadow-lg">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.-0a3LZQEJJTw2O6BbpYUqwHaJ4?rs=1&pid=ImgDetMain&o=7&rm=3" class=" h-40 w-80 rounded-lg shadow-lg animate-float" alt="Transmission">
+      <div class="md:w-1/2 space-y-2">
+        <h2 class="text-2xl font-bold">Transmission</h2>
+        <p>8-speed automatic gearbox, rear-wheel drive with paddle shifters for sporty control.</p>
+      </div>
+    </section>
+
+    <section class="flex flex-col md:flex-row items-center gap-8 hover:bg-gray-100 p-6 rounded-lg transition-transform transform hover:scale-105 shadow hover:shadow-lg">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.6OTnIf-dr2iHRh6LNKHWbQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" class="w-80 h-40 rounded-lg shadow-lg animate-float" alt="Suspension">
+      <div class="md:w-1/2 space-y-2">
+        <h2 class="text-2xl font-bold">Suspension</h2>
+        <p>Adaptive M suspension ensures sporty handling and comfortable ride dynamics.</p>
+      </div>
+    </section>
+
+    <section class="flex flex-col md:flex-row-reverse items-center gap-8 hover:bg-gray-100 p-6 rounded-lg transition-transform transform hover:scale-105 shadow hover:shadow-lg">
+      <img src="https://storage.googleapis.com/club-manual/optimize/manual_images/17569/retina/s20.jpg" class="w-80 h-40 rounded-lg shadow-lg animate-float" alt="Brakes">
+      <div class="md:w-1/2 space-y-2">
+        <h2 class="text-2xl font-bold">Brakes</h2>
+        <p>M Sport brakes with ABS and electronic brake-force distribution for safe stopping.</p>
+      </div>
+    </section>
+
+    <section class="flex flex-col md:flex-row items-center gap-8 hover:bg-gray-100 p-6 rounded-lg transition-transform transform hover:scale-105 shadow hover:shadow-lg">
+      <img src="https://th.bing.com/th/id/R.a32a5bea7f98cceb0b75035123bee5a2?rik=STLiiMVlWlsatw&riu=http%3a%2f%2fimages.gtcarlot.com%2fpictures%2f59843390.jpg&ehk=kbKkBxBirP1SOn9Z%2fmYtXXBXiNyhNGHYqMTQo%2bvof4U%3d&risl=&pid=ImgRaw&r=0" class="w-80 h-40 rounded-lg shadow-lg animate-float" alt="Steering">
+      <div class="md:w-1/2 space-y-2">
+        <h2 class="text-2xl font-bold">Steering</h2>
+        <p>Electric variable ratio steering for precision control in sport or comfort modes.</p>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="bg-gray-900 text-gray-300 py-16">
+    <div class="max-w-7xl mx-auto px-8 flex flex-wrap gap-6 justify-center">
+      <p class="text-sm">About BMW Z4</p>
+      <p class="text-sm">Performance</p>
+      <p class="text-sm">Engine</p>
+      <p class="text-sm">Transmission</p>
+      <p class="text-sm">Suspension</p>
+      <p class="text-sm">Interior</p>
+      <p class="text-sm">Safety</p>
+      <p class="text-sm">Infotainment</p>
+      <p class="text-sm">Wheels</p>
+      <p class="text-sm">Lighting</p>
+      <p class="text-sm">Exhaust</p>
+      <p class="text-sm">Drive Modes</p>
+      <p class="text-sm">Roof</p>
+      <p class="text-sm">Cooling</p>
+      <p class="text-sm">Connectivity</p>
+      <p class="text-sm">Awards</p>
+      <p class="text-sm">Colors</p>
+      <p class="text-sm">Trunk</p>
+      <p class="text-sm">Service</p>
+      <p class="text-sm">Contact</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMW X3 Vertical Layout</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+@layer utilities {
+  @keyframes float {0%,100%{transform:translateY(0);}25%{transform:translateY(-5px);}50%{transform:translateY(5px);}75%{transform:translateY(-2px);}}
+  .animate-float {animation: float 5s infinite alternate;}
+  @keyframes pulse {0%,100%{transform:scale(1);}50%{transform:scale(1.05);}}
+  .animate-pulse-hover:hover {animation: pulse 1s infinite alternate;}
+}
+</style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans overflow-y-scroll">
+
+<header class="bg-gradient-to-r from-purple-800 to-purple-600 text-white py-20 text-center">
+  <img src="https://tse1.mm.bing.net/th/id/OIP.Q44a_E1PJhdhK2YucNN83wHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="BMW X3 Logo" class="mx-auto mb-6 w-84 h-24  shadow-lg animate-float">
+  <h1 class="text-6xl font-extrabold mb-4">BMW X3</h1>
+  <p class="max-w-2xl mx-auto text-xl tracking-wide">Luxury compact SUV with AWD performance, efficient engines, and modern technology.</p>
+</header>
+
+<main class="max-w-4xl mx-auto px-6 py-16 space-y-12">
+
+<section class="flex flex-col items-center gap-6 hover:bg-gray-100 p-6 rounded-lg transition-transform transform hover:scale-105 shadow hover:shadow-lg">
+<img src="https://tse1.mm.bing.net/th/id/OIP.PKR5ayH6hAHgQNaUt-mw1wHaFc?rs=1&pid=ImgDetMain&o=7&rm=3" class="rounded-lg shadow-lg animate-float" alt="Engine">
+<div class="space-y-2 text-center">
+  <h2 class="text-2xl font-bold">Engine</h2>
+  <p>2.0L TwinPower Turbo inline-4 or 3.0L inline-6, producing 248–382 HP depending on variant.</p>
+</div>
+</section>
+
+<section class="flex flex-col items-center gap-6 hover:bg-gray-100 p-6 rounded-lg transition-transform transform hover:scale-105 shadow hover:shadow-lg">
+<img src="https://th.bing.com/th/id/R.69f26d00c972b5ea306c57cd73ff5d53?rik=8OHRqiQnlwsaqw&riu=http%3a%2f%2fi68.servimg.com%2fu%2ff68%2f12%2f98%2f44%2f81%2fbmw_xd10.jpg&ehk=rVXL0JXxGsBhWCIwGo1prRxs3IK7FNQRAOFZZZz%2bQTU%3d&risl=&pid=ImgRaw&r=0" class="rounded-lg h-50 w-40 shadow-lg animate-pulse-hover" alt="Transmission">
+<div class="space-y-2 text-center">
+  <h2 class="text-2xl font-bold">Transmission</h2>
+  <p>8-speed automatic with Steptronic and optional xDrive AWD for precise control.</p>
+</div>
+</section>
+
+<section class="flex flex-col items-center gap-6 hover:bg-gray-100 p-6 rounded-lg transition-transform transform hover:scale-105 shadow hover:shadow-lg">
+<img src="https://tse1.mm.bing.net/th/id/OIP.W46u-TXdvZETBU3DHakfXAHaFL?rs=1&pid=ImgDetMain&o=7&rm=3" class="rounded-lg shadow-lg animate-float" alt="Suspension">
+<div class="space-y-2 text-center">
+  <h2 class="text-2xl font-bold">Suspension</h2>
+  <p>Adaptive M suspension with optional air suspension for comfort and sport handling.</p>
+</div>
+</section>
+
+<!-- Repeat remaining 17+ sections vertically in the same format -->
+
+</main>
+
+<!-- FOOTER UNIQUE -->
+<footer class="bg-gradient-to-r from-purple-900 to-pink-700 text-gray-100 py-20">
+  <div class="max-w-4xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Column 1 -->
+    <div class="space-y-2 text-center md:text-left">
+      <h3 class="font-bold text-lg">About X3</h3>
+      <p class="text-sm">Performance</p>
+      <p class="text-sm">Engine</p>
+      <p class="text-sm">Transmission</p>
+      <p class="text-sm">Suspension</p>
+    </div>
+ <div class="space-y-2">
+      <h3 class="font-bold text-lg">Follow Us</h3>
+      <div class="flex gap-4 mt-2">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="hover:scale-110 h-7" alt="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" class="hover:scale-110 h-7" alt="Facebook">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" class="hover:scale-110 h-7" alt="Twitter">
+      </div>
+    </div>
+  </div>
+  <p class="text-center mt-10 text-sm opacity-70">© 2026 BMW X3. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

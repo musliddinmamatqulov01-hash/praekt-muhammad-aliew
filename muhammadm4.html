@@ -1,0 +1,168 @@
+<!DOCTYPE html> <html lang="tg"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>BMW M4: Driving Excellence</title> <script src="https://cdn.tailwindcss.com"></script> <style> /* Custom Keyframes and Animations */ @keyframes slideInLeft { 0% { opacity: 0; transform: translateX(-100px); } 100% { opacity: 1; transform: translateX(0); } } @keyframes slideInRight { 0% { opacity: 0; transform: translateX(100px); } 100% { opacity: 1; transform: translateX(0); } } @keyframes rotateFadeIn { 0% { opacity: 0; transform: rotateY(90deg) scale(0.8); } 100% { opacity: 1; transform: rotateY(0deg) scale(1); } } @keyframes pulseRing { 0% { box-shadow: 0 0 0 0 rgba(0, 119, 255, 0.4); } 70% { box-shadow: 0 0 0 20px rgba(0, 119, 255, 0); } 100% { box-shadow: 0 0 0 0 rgba(0, 119, 255, 0); } }
+
+    .animate-slideInLeft {
+        animation: slideInLeft 1s ease-out forwards;
+    }
+    .animate-slideInRight {
+        animation: slideInRight 1s ease-out forwards;
+    }
+    .animate-rotateFadeIn {
+        animation: rotateFadeIn 0.8s ease-out forwards;
+    }
+    .animate-pulseRing {
+        animation: pulseRing 2s infinite;
+    }
+
+    /* Hover effects for images */
+    .hover-glare::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -75%;
+        width: 50%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.3);
+        transform: skewX(-45deg);
+        transition: left 0.5s ease-in-out;
+    }
+    .hover-glare:hover::before {
+        left: 125%;
+    }
+</style>
+</head> <body class="bg-gray-900 text-gray-100 font-sans">
+
+<header class="relative h-screen flex flex-col items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 w-full h-full bg-cover bg-center" 
+         style="background-image: url('https://www.bmw.com/content/dam/bmw/global/all-models/m-series/m4-coupe/2024/highlights/bmw-m4-coupe-design-visualizer-desktop.jpg'); background-size: cover; background-position: center; filter: brightness(0.6);"></div>
+    
+    <div class="relative z-10 text-center px-6">
+        <p class="text-xl md:text-2xl text-red-500 mb-4 tracking-widest uppercase animate-slideInLeft">Pure Adrenaline</p>
+        <h1 class="text-7xl md:text-9xl font-extrabold mb-6 text-white leading-tight animate-slideInRight">BMW <span class="text-red-600">M4</span> Coupe</h1>
+        <p class="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto animate-slideInRight" style="animation-delay: 0.2s;">
+            Engineered for exhilaration, perfected for the road. The BMW M4 Coupe combines athletic prowess with everyday usability.
+        </p>
+        <button class="mt-12 px-10 py-4 bg-red-600 text-white text-lg font-semibold rounded-full hover:bg-red-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 animate-rotateFadeIn" style="animation-delay: 0.4s;">
+            Build Your M4
+        </button>
+    </div>
+</header>
+
+<section class="py-24 bg-gray-950 px-6">
+    <div class="max-w-7xl mx-auto text-center mb-16">
+        <span class="text-red-500 text-sm font-bold uppercase mb-3 block">Unleash Performance</span>
+        <h2 class="text-5xl font-bold leading-tight text-white">The Heart of a Champion.</h2>
+    </div>
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="lg:order-2 relative group overflow-hidden rounded-2xl shadow-2xl hover-glare">
+            <img src="https://th.bing.com/th/id/R.1a267572071b773035df5d331074e06e?rik=bFYgNjw4tMKtgg&pid=ImgRaw&r=0" 
+                 alt="BMW M4 Engine" 
+                 class="w-full h-auto object-cover rounded-2xl transition-transform duration-700 group-hover:scale-110">
+
+        </div>
+        <div class="lg:order-1">
+            <p class="text-gray-300 text-lg mb-8">
+                The high-revving M TwinPower Turbo inline 6-cylinder petrol engine in the BMW M4 Coupe delivers explosive power and torque. Paired with a precisely tuned chassis, it offers an unparalleled driving experience.
+            </p>
+            <ul class="space-y-4 text-gray-400 text-lg">
+                <li class="flex items-center"><span class="text-red-500 font-bold text-2xl mr-3">510</span> hp</li>
+                <li class="flex items-center"><span class="text-red-500 font-bold text-2xl mr-3">3.5</span> sec (0-100 km/h)</li>
+                <li class="flex items-center"><span class="text-red-500 font-bold text-2xl mr-3">8</span>-speed M Steptronic with Drivelogic</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 bg-gray-900 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+            <span class="text-red-500 text-sm font-bold uppercase mb-3 block">Interior & Innovation</span>
+            <h2 class="text-5xl font-bold mb-6 leading-tight text-white">Advanced Cockpit. Uncompromised Control.</h2>
+            <p class="text-gray-300 text-lg mb-8">
+                Every element of the BMW M4's interior is crafted for the driver. From the bespoke M Sport seats to the intuitive curved display, you are always in command, enveloped in luxury and cutting-edge technology.
+            </p>
+            <ul class="space-y-3 text-gray-400">
+                <li class="flex items-center"><svg class="w-5 h-5 mr-3 text-red-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> M Carbon Bucket Seats (optional)</li>
+                <li class="flex items-center"><svg class="w-5 h-5 mr-3 text-red-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> BMW Live Cockpit Professional</li>
+                <li class="flex items-center"><svg class="w-5 h-5 mr-3 text-red-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> M Drive Professional</li>
+            </ul>
+        </div>
+        <div class="relative group overflow-hidden rounded-2xl shadow-2xl ">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.J40O6ZnEwMl6aDnr2zh--wHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" 
+                 alt="BMW M4 Interior" 
+                 class="w-full h-auto  rounded-2xl transition-transform duration-700 group-hover:scale-110">
+
+    </div>
+</section>
+
+<section class="py-24 bg-gray-950 px-6 text-center">
+    <div class="max-w-7xl mx-auto">
+        <span class="text-red-500 text-sm font-bold uppercase mb-3 block">Chassis & Dynamics</span>
+        <h2 class="text-5xl font-bold mb-12 leading-tight text-white">Precision on Every Corner.</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <div class="relative group overflow-hidden rounded-xl shadow-lg border border-gray-700">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.G2w7xDGWTnUnOWu3moBX_QHaEO?rs=1&pid=ImgDetMain&o=7&rm=3" 
+                     alt="M Adaptive Suspension" 
+                     class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="p-6 bg-gray-800">
+                    <h4 class="text-2xl font-semibold text-white mb-2">M Adaptive Suspension</h4>
+                    <p class="text-gray-400">Electronically controlled dampers for ultimate control.</p>
+                </div>
+            </div>
+            
+            <div class="relative group overflow-hidden rounded-xl shadow-lg border border-gray-700">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.1nzAzsGiyP4GkolQI7IiSQHaE6?rs=1&pid=ImgDetMain&o=7&rm=3" 
+                     alt="M Forged Wheels" 
+                     class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="p-6 bg-gray-800">
+                    <h4 class="text-2xl font-semibold text-white mb-2">M Forged Wheels</h4>
+                    <p class="text-gray-400">Lightweight and strong for superior handling.</p>
+                </div>
+            </div>
+
+            <div class="relative group overflow-hidden rounded-xl shadow-lg border border-gray-700">
+                <img src="https://www.bmw.com/content/dam/bmw/global/all-models/m-series/m4-coupe/2024/highlights/bmw-m4-coupe-carbon-roof-visualizer-desktop.jpg" 
+                     alt="Carbon Fibre Roof" 
+                     class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="p-6 bg-gray-800">
+                    <h4 class="text-2xl font-semibold text-white mb-2">Carbon Fibre Roof</h4>
+                    <p class="text-gray-400">Reduces weight and lowers the centre of gravity.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="py-24 bg-gray-900 px-6 text-center">
+    <div class="max-w-5xl mx-auto">
+        <span class="text-red-500 text-sm font-bold uppercase mb-3 block">Visual Mastery</span>
+        <h2 class="text-5xl font-bold mb-12 leading-tight text-white">Every Angle, Pure M.</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="relative group overflow-hidden rounded-xl shadow-xl hover-glare">
+                <img src="https://www.bmw.com/content/dam/bmw/global/all-models/m-series/m4-coupe/2024/highlights/bmw-m4-coupe-gallery-01-1920px.jpg" 
+                     alt="BMW M4 Front" 
+                     class="w-full h-auto object-cover rounded-xl transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gray-950/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <p class="text-white text-xl font-bold">Assertive Front</p>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden rounded-xl shadow-xl hover-glare">
+                <img src="https://www.bmw.com/content/dam/bmw/global/all-models/m-series/m4-coupe/2024/highlights/bmw-m4-coupe-gallery-02-1920px.jpg" 
+                     alt="BMW M4 Rear" 
+                     class="w-full h-auto object-cover rounded-xl transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gray-950/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <p class="text-white text-xl font-bold">Dynamic Rear</p>
+                </div>
+            </div>
+        </div>
+        <button class="mt-12 px-10 py-4 bg-transparent border-2 border-red-600 text-red-400 text-xl font-semibold rounded-full hover:bg-red-600 hover:text-white transition-all duration-300">
+            Explore M4 Gallery
+        </button>
+    </div>
+</section>
+
+<footer class="py-12 bg-gray-950 text-gray-500 text-center text-sm">
+    <p>&copy; 2026 BMW M4. All rights reserved. | <a href="#" class="hover:text-red-500">Privacy Policy</a> | <a href="#" class="hover:text-red-500">Legal Notice</a></p>
+</footer>

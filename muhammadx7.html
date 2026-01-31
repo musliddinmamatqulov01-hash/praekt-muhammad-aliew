@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="tg"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>BMW X7 Showcase</title> <script src="https://cdn.tailwindcss.com"></script> <style> /* Custom Keyframes and Animations (from tailwind.config.js logic) */ @keyframes fade-in-up { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0); } } @keyframes glow { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } } @keyframes rotate-y { from { transform: perspective(800px) rotateY(0deg); } to { transform: perspective(800px) rotateY(360deg); } }
+
+    .animate-fade-in-up {
+        animation: fade-in-up 0.8s ease-out forwards;
+    }
+    .animate-glow {
+        animation: glow 2s infinite;
+    }
+    .animate-rotate-y {
+        animation: rotate-y 5s linear infinite;
+    }
+</style>
+</head> <body class="bg-black text-white font-sans">
+
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+    <h1 class="absolute text-[20vw] font-black text-gray-900 select-none z-0">THE X7</h1>
+    
+    <div class="z-10 text-center animate-fade-in-up">
+        <p class="tracking-[0.5em] text-blue-500 mb-4">BMW LUXURY CLASS</p>
+        <h2 class="text-6xl md:text-8xl font-bold mb-8">FORWARDISM</h2>
+        
+        <div class="relative group cursor-pointer">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.lb4JQKYRsAEPKafY1CV6MwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" 
+                 class="w-full max-w-4xl transition-transform duration-700 group-hover:scale-110" 
+                 alt="BMW X7 Exterior">
+            <div class="absolute inset-0 bg-blue-500/20 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        </div>
+    </div>
+</section>
+
+<section class="py-20 bg-zinc-950 px-10">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        <div class="flex-1">
+            <h3 class="text-4xl font-bold mb-6">Rangi xudro intixob kuned</h3>
+            <p class="text-gray-400 mb-8">Baroi didani ranghoi gunogun, usti doyiraho mushakatonro harakat dihed.</p>
+            <div class="flex gap-4">
+                <div class="w-10 h-10 rounded-full bg-blue-900 border-2 border-white cursor-pointer hover:ring-4 ring-blue-500 transition-all duration-300 transform hover:scale-125"
+                     onmouseover="document.getElementById('car-interior-img').src='[https://www.bmw.tj/content/dam/bmw/common/all-models/x-series/x7/2022/highlights/bmw-x7-highlights-interieur-desktop.jpg](https://www.bmw.tj/content/dam/bmw/common/all-models/x-series/x7/2022/highlights/bmw-x7-highlights-interieur-desktop.jpg)'"
+                     onmouseout="document.getElementById('car-interior-img').src='[https://www.bmw.tj/content/dam/bmw/common/all-models/x-series/x7/2022/highlights/bmw-x7-highlights-interieur-desktop.jpg](https://www.bmw.tj/content/dam/bmw/common/all-models/x-series/x7/2022/highlights/bmw-x7-highlights-interieur-desktop.jpg)'"></div>
+                <div class="w-10 h-10 rounded-full bg-gray-600 border-2 border-transparent hover:border-white cursor-pointer transition-all duration-300 transform hover:scale-125"
+                     onmouseover="document.getElementById('car-interior-img').src='[https://www.bmw.tj/content/dam/bmw/global/all-models/x-series/x7/2022/highlights/bmw-x7-gallery-05-1920px.jpg](https://www.bmw.tj/content/dam/bmw/global/all-models/x-series/x7/2022/highlights/bmw-x7-gallery-05-1920px.jpg)'"
+                     onmouseout="document.getElementById('car-interior-img').src='[https://www.bmw.tj/content/dam/bmw/common/all-models/x-series/x7/2022/highlights/bmw-x7-highlights-interieur-desktop.jpg](https://www.bmw.tj/content/dam/bmw/common/all-models/x-series/x7/2022/highlights/bmw-x7-highlights-interieur-desktop.jpg)'"></div>
+                <div class="w-10 h-10 rounded-full bg-white border-2 border-transparent hover:border-black cursor-pointer transition-all duration-300 transform hover:scale-125"
+                     onmouseover="document.getElementById('car-interior-img').src='[https://www.bmw.tj/content/dam/bmw/global/all-models/x-series/x7/2022/highlights/bmw-x7-gallery-06-1920px.jpg](https://www.bmw.tj/content/dam/bmw/global/all-models/x-series/x7/2022/highlights/bmw-x7-gallery-06-1920px.jpg)'"
+                     onmouseout="document.getElementById('car-interior-img').src='[https://www.bmw.tj/content/dam/bmw/common/all-models/x-series/x7/2022/highlights/bmw-x7-highlights-interieur-desktop.jpg](https://www.bmw.tj/content/dam/bmw/common/all-models/x-series/x7/2022/highlights/bmw-x7-highlights-interieur-desktop.jpg)'"></div>
+            </div>
+        </div>
+        <div class="flex-1 relative overflow-hidden rounded-xl group">
+            <img id="car-interior-img" src="https://tse1.mm.bing.net/th/id/OIP.5SiNcAFv_YEvpr-SVTUszgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" 
+                 class="rounded-xl transition-all duration-1000 group-hover:rotate-1 group-hover:scale-110"
+                 alt="BMW X7 Interior">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+            <p class="absolute bottom-5 left-5 font-bold text-lg">INTERIOR LUXURY</p>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 px-10 bg-zinc-900">
+    <h3 class="text-5xl font-bold text-center mb-16">Xususiyatxoi Kalidii BMW X7</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        
+        <div class="p-8 bg-zinc-800 rounded-2xl hover:bg-blue-600 transition-colors duration-500 group relative overflow-hidden">
+            <img src="[https://www.bmw.tj/content/dam/bmw/common/all-models/x-series/x7/2022/highlights/bmw-x7-highlights-digital-desktop.jpg](https://www.bmw.tj/content/dam/bmw/common/all-models/x-series/x7/2022/highlights/bmw-x7-highlights-digital-desktop.jpg)" 
+                 class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-10 transition-opacity duration-500 blur-sm" alt="iDrive 8">
+            <div class="relative z-10">
+                <div class="h-1 w-12 bg-blue-500 mb-6 group-hover:bg-white transition-colors"></div>
+                <h4 class="text-3xl font-bold mb-4">iDrive 8</h4>
+                <p class="text-gray-300 group-hover:text-white/90">Sistemai multimediai navtarin bo ekrani kashida va xususiyatxoi intellektualī.</p>
+            </div>
+        </div>
+
+        <div class="p-8 bg-zinc-800 rounded-2xl border border-blue-500/30 animate-glow relative overflow-hidden">
+            <img src="[https://www.bmw.tj/content/dam/bmw/global/all-models/x-series/x7/2022/highlights/bmw-x7-gallery-08-1920px.jpg](https://www.bmw.tj/content/dam/bmw/global/all-models/x-series/x7/2022/highlights/bmw-x7-gallery-08-1920px.jpg)" 
+                 class="absolute inset-0 w-full h-full object-cover opacity-30 blur-sm" alt="Sky Lounge">
+            <div class="relative z-10">
+                <div class="h-1 w-12 bg-blue-500 mb-6"></div>
+                <h4 class="text-3xl font-bold mb-4">Sky Lounge</h4>
+                <p class="text-gray-300">Saqfi panoramī bo 15,000 nuqtai nuronī, ki atmosfera-i maxsus mexalq kunad.</p>
+            </div>
+        </div>
+
+        <div class="p-8 bg-zinc-800 rounded-2xl hover:bg-zinc-700 transition-transform hover:-translate-y-4 relative overflow-hidden">
+            <img src="[https://www.bmw.tj/content/dam/bmw/global/all-models/x-series/x7/2022/highlights/bmw-x7-gallery-07-1920px.jpg](https://www.bmw.tj/content/dam/bmw/global/all-models/x-series/x7/2022/highlights/bmw-x7-gallery-07-1920px.jpg)" 
+                 class="absolute inset-0 w-full h-full object-cover opacity-30 blur-sm" alt="xDrive">
+            <div class="relative z-10">
+                <div class="h-1 w-12 bg-blue-500 mb-6"></div>
+                <h4 class="text-3xl font-bold mb-4">xDrive</h4>
+                <p class="text-gray-300">Sistemai purrai harakat baroi hama nav'i roh-ho, ki qobilyati bexato-ro ta'min mekunad.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-20 px-10 bg-zinc-950 text-center">
+    <h3 class="text-5xl font-bold mb-12">BMW X7 dar Har Guzarish</h3>
+    <p class="text-gray-400 max-w-2xl mx-auto mb-10">Injo shumo metavoned BMW X7-ro az guzarishhoi gunogun binoyad. Mushakatonro boloi aks harakat dihed, to effekti 3D-ro bined.</p>
+    
+    <div class="relative max-w-4xl mx-auto group">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.TCu5Kqg-UKmhn1PbZogjMwAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" 
+             class="w-300 m-auto h-100 rounded-xl shadow-lg transition-transform duration-700 group-hover:scale-105 group-hover:rotate-1 transform group-hover:skew-x-1" 
+             alt="BMW X7 Dynamic View">
+        <div class="absolute inset-0  opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl"></div>
+    </div>
+</section>
